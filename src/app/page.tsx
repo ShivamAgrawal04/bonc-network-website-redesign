@@ -1,21 +1,19 @@
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero";
+import Features from "@/components/sections/Features";
 import Categories from "@/components/sections/Categories";
 import BentoListings from "@/components/sections/BentoListings";
-import HowItWorks from "@/components/sections/HowItWorks";
-import Testimonials from "@/components/sections/Testimonials";
 import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="min-h-screen bg-white font-sans text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900">
       <Navbar />
-      <main className="flex-grow">
+      <main>
         <Hero />
+        <Features />
         <Categories />
         <BentoListings />
-        <HowItWorks />
-        <Testimonials />
       </main>
       <Footer />
     </div>
